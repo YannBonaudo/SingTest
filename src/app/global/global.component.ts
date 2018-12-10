@@ -15,6 +15,15 @@ export class GlobalComponent implements OnInit {
 
   
   constructor() { }
+  randomSong() {
+    return (this.songs[this.getRandomInt(this.songs.length)])   
+  }
+  randomOnomatopee() {
+    return (this.onomatopee[this.getRandomInt(this.onomatopee.length)])   
+  }
+  getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
 
   ngOnInit() {
   }
